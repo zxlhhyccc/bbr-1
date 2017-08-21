@@ -1,3 +1,10 @@
+
+wget --no-check-certificate https://raw.githubusercontent.com/goodshell/bbr/master/bbr.sh
+chmod +x bbr.sh
+./bbr.sh
+
+
+
 最近，Google 开源了其 TCP BBR 拥塞控制算法，并提交到了 Linux 内核，最新的 4.11 版内核已经用上了该算法。根据以往的传统，Google 总是先在自家的生产环境上线运用后，才会将代码开源，此次也不例外。
 根据实地测试，在部署了最新版内核并开启了 TCP BBR 的机器上，网速甚至可以提升好几个数量级。
 于是我根据目前三大发行版的最新内核，开发了一键安装最新内核并开启 TCP BBR 脚本。
